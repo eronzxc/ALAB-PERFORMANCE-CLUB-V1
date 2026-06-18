@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alab Performance Club</title>
+
+  <!-- Tabler Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       TOP NAVIGATION BAR
+       ─ Logo + nav links + user avatar
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span class="brand-flame">▲</span>
+      <div class="brand-text">
+        <span class="brand-name">ALAB</span>
+        <span class="brand-sub">PERFORMANCE CLUB</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link active" data-page="dashboard"><i class="ti ti-layout-dashboard"></i> Dashboard</a></li>
+      <li><a href="#" class="nav-link" data-page="members"><i class="ti ti-users"></i> Members</a></li>
+      <li><a href="#" class="nav-link" data-page="attendance"><i class="ti ti-clipboard-check"></i> Attendance</a></li>
+      <li><a href="#" class="nav-link" data-page="payments"><i class="ti ti-credit-card"></i> Payments</a></li>
+      <li><a href="#" class="nav-link" data-page="classes"><i class="ti ti-calendar-event"></i> Classes</a></li>
+    </ul>
+
+    <div class="navbar-right">
+      <div class="admin-badge">
+        <i class="ti ti-user-circle"></i>
+        <span>Admin</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT AREA
+       ─ Each page renders here via JS
+  ═══════════════════════════════════════════ -->
+  <main class="main-content" id="app">
+    <!-- JavaScript mag-re-render nito depende sa active page -->
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       TOAST NOTIFICATION
+       ─ Shown via showToast() function sa store.js
+  ═══════════════════════════════════════════ -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN JS ENTRY POINT
+       ─ type="module" kailangan para sa ES Modules
+       ─ IMPORTANT: Live Server lang, hindi file://
+  ═══════════════════════════════════════════ -->
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
