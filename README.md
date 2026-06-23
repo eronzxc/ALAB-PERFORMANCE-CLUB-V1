@@ -1,6 +1,6 @@
 # 🔥 Alab Performance Club — XAMPP Setup Guide
 
-## Mga Kailangan
+## Requirements (Software)
 - XAMPP (Apache + MySQL + PHP 7.4+)
 - Browser (Chrome, Firefox, Edge)
 
